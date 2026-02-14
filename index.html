@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Una carta digital de San Valentín para mi amiga más especial">
+  <meta property="og:title" content="Para ti - Katt">
+  <meta property="og:description" content="Porque las amistades verdaderas son el mejor regalo.">
+  <title>Para ti - Katt</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon/favicon-16x16.png">
+  <link rel="preload" href="img/Background/Background_Xayah_and_Rakan.jpg" as="image">
+  <link rel="manifest" href="img/Favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init('AE5Ol3cUljRG0Eja1');
+    })();
+  </script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/playlist.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/tu-tienda.css">
+  <link rel="stylesheet" href="css/splash.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div id="splash">
+    <div class="heart-wrapper">
+      <img src="img/Iconos/Xayah_Izq.png" alt="Mitad izquierda del corazón" class="heart-part left">
+      <img src="img/Iconos/Rakan_Der.png" alt="Mitad derecha del corazón" class="heart-part right">
+    </div>
+  </div>
+
+  <div id="main-content" style="display: none;">
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#mensajes">Cartas</a></li>
+        <li><a href="#recuerdos">Recuerdos</a></li>
+        <li><a href="#playlist">Playlist</a></li>
+        <li><a href="#regalos">Regalos</a></li>
+        <li><a href="#tu-tienda">Tienda</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-btn">
+        <i class="fa-solid fa-sun" id="theme-icon"></i>
+      </button>
+    </nav>
+
+    <main id="fullpage-sections">
+
+      <section id="hero" class="hero-new section full-vh">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h1 class="reveal-title">PAOLA</h1>
+            <p class="hero-phrase reveal-text" style="animation-delay: 1s;">
+              Mi cielito, mi bb, mi todo 💕
+            </p>
+            <p class="small-heart reveal-text" style="animation-delay: 1.8s;">
+              ¡Feliz San Valentín!
+            </p>
+            <a href="#mensajes" class="btn pulse-btn reveal-text" style="animation-delay: 2.5s;">
+              Tócame &#x1FAE6;
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="mensajes" class="section full-vh">
+        <div class="container">
+          <h2>Algunas cosas que pienso de ti</h2>
+          
+          <div class="card accordion">
+            <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
+              <h3>De las cosas que admiro de ti <span class="toggle">↓</span></h3>
+            </div>
+            <div class="accordion-content">
+              <p>Hola bebé, si me lo preguntan, honestamente admiro todo de ti jajaja, pero que sepas que, admiro <strong>tu capacidad infinita de hacer sentir a los demás especiales</strong>. Tienes ese don único de escuchar con el corazón, sin juzgar, simplemente estando presente cuando más te necesito. Como aquella vez que me acompañaste hasta encontrar luz cuando todo parecía oscuro.</p>
+              <p>Admiro <strong>tu valentía para ser auténtica</strong> en un mundo que a veces pide "máscaras". Esa risa contagiosa y esa carita hermosa tiene el poder de transformar mis días grises en momentos luminosos, y tu generosidad silenciosa brilla en cada detalle que regalas sin esperar nada a cambio. <strong>Eres una de esas personas que hacen del mundo un lugar mejor</strong>, simplemente por existir.</p>
+            </div>
+          </div>
+
+          <div class="card accordion">
+            <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
+              <h3>Un recuerdo que siempre me saca una sonrisa <span class="toggle">↓</span></h3>
+            </div>
+            <div class="accordion-content">
+              <p>Sinceramente todos los recuerdos que tengo contigo, son muy <strong>bonitos</strong>. Y de cierta forma no tengo alguno en específico, porque cada uno de ellos es especial a su manera. Pero si tuviera que elegir uno, sería esa vez que nos quedamos despiertos hasta las 5-6 de la mañana hablando de todo y nada. Viendo el partido de T1, y antes de eso jugando no sé cuantas cosas jajaja, fue fantástico.</p>
+            </div>
+          </div>
+
+          <div class="card accordion">
+            <div class="accordion-header" tabindex="0" role="button" aria-expanded="false">
+              <h3>Te prometo <span class="toggle">↓</span></h3>
+            </div>
+            <div class="accordion-content">
+              <p>Te prometo <strong>celebrar tus victorias como si fueran mías</strong>, porque en cierto modo, lo son. Cada logro tuyo me llena de orgullo y felicidad. Te prometo sostenerte en los tropiezos sin juzgar, recordándote lo fuerte y capaz que eres, incluso cuando tú misma lo olvides.</p>
+              <p>Te prometo seguir construyendo nuevas memorias juntos <strong>hasta que la vida nos lo permita</strong>. Cuentas conmigo para unos ricos abrazos virtuales jiji, para cuando el mundo pese demasiado, para confesiones largas de madrugada y para risas incontrolables en los momentos más simples.</p>
+              <p><strong>Siempre aquí, siempre tu amigo, siempre agradecido de que nuestros caminos se cruzaran.</strong> Te quiero infinito, Paola. 💗</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="recuerdos" class="section full-vh gallery-section">
+        <div class="container">
+          <h2>Nuestros mejores momentos</h2>
+          <div class="gallery">
+            <div class="gallery-item">
+              <video src="img/Images/Videos/Katt_Dan.mp4" loading="lazy" alt="Recuerdo 1" class="gallery-video"></video>
+              <div class="caption">De nuestras primeras aventuras juntos</div>
+            </div>
+            <div class="gallery-item">
+              <video src="img/Images/Videos/Troll_me.mp4" loading="lazy" alt="Recuerdo 2" class="gallery-video"></video>
+              <div class="caption">Te quiero tanto...</div>
+            </div>
+            <div class="gallery-item">
+              <video src="img/Images/Videos/Truck.mp4" loading="lazy" alt="Recuerdo 3" class="gallery-video"></video>
+              <div class="caption">Un besito de camionero</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="playlist" class="section full-vh">
+        <div class="container">
+          <h2>Algunas rolitas nuestras</h2>
+          <div class="playlist-grid">
+            <div class="song">
+              <h4>1. [Oceans] - [Seafret]</h4>
+              <p>En algún momento te la llegué a enviar, pero hoy realmente quiero dedicártela.</p>
+              <a href="https://open.spotify.com/intl-es/track/5eXnC2B5RU5fAhfwvV2ABD?si=64eaabe351924d45" target="_blank" class="btn-small">Escuchar →</a>
+            </div>
+            <div class="song">
+              <h4>2. [Tu canción] - [Favorita]</h4>
+              <p>Sin dudas creo que esta te encantará.</p>
+              <a href="https://open.spotify.com/intl-es/track/2YedEu7sfD4HcmmLhjecNI?si=9a64d57017554fb5" target="_blank" class="btn-small">Escuchar →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="regalos" class="section full-vh">
+        <div class="container">
+          <h2>Regalitos virtuales para ti</h2>
+          <div class="coupons">
+            <div class="coupon">
+              <h4>Cupón 1</h4>
+              <p>Una maratón de películas o series favoritas.</p>
+            </div>
+            <div class="coupon">
+              <h4>Cupón 2</h4>
+              <p>Estar juntos y disfrutar de un momento especial (Igual que siempre)</p>
+            </div>
+            <div class="coupon">
+              <h4>Cupón 3</h4>
+              <p>Te dejo que elijas lo que quieras (Menos vestime de Danielita)</p>
+            </div>
+          </div>
+          <p class="final-msg">Gracias por ser mi amiga. Te quiero muchísimo.</p>
+          <p class="signature">Dantler 💗</p>
+
+          <div class="respuesta">
+            <button class="respuesta-button btn">Toca aquí</button>
+          </div>
+
+          <div id="respuesta-modal" class="respuesta-modal" aria-hidden="true">
+            <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="respuesta-title" tabindex="-1">
+              <button class="modal-close" aria-label="Cerrar">×</button>
+              <h3 id="respuesta-title">¿Qué me quieres decir tú? 💌</h3>
+              <textarea id="respuesta-text" placeholder="Escribe aquí tu mensaje..."></textarea>
+              <div class="modal-actions">
+                <button id="enviar-respuesta" class="btn">Enviar</button>
+                <button id="cerrar-respuesta" class="btn btn-small">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tu-tienda" class="section full-vh">
+        <div class="container">
+          <div class="tu-tienda-header">
+            <span class="tu-tienda-badge">Exclusivo</span>
+            <h2 class="tu-tienda-title">Nuestra Tienda</h2>
+            <span class="tu-tienda-divider" aria-hidden="true"></span>
+            <p class="tu-tienda-subtitle">Ofertas únicas solo para ti 💎</p>
+          </div>
+          <div class="tu-tienda-grid">
+            <div class="tu-tienda-card">
+              <div class="card-front">
+                <div class="card-frame"></div>
+                <img src="https://cdn.7tv.app/emote/01FE41JXAR0005TJYSHSM7H0M0/4x.gif" class="card-label-gif" alt="Oferta 1">
+              </div>
+              <div class="card-back">
+                <video src="img/Images/Videos/ForYou.mp4" class="card-image" alt="Oferta 1"></video>
+                <img src="https://modelviewer.lol/rarity/transcendent.png" class="card-rarity-badge" alt="Raridad">
+              </div>
+              <div class="card-price-outside">
+                <img src="https://wiki.leagueoflegends.com/en-us/images/RP_icon.png?1fb01" class="card-rp" alt="RP">
+                <span>35407 RP</span>
+              </div>
+              <p class="card-description">Ábrelo uwu</p>
+            </div>
+
+            <div class="tu-tienda-card">
+              <div class="card-front">
+                <div class="card-frame"></div>
+                <img src="https://cdn.7tv.app/emote/01F79PKX2R0005BGS0Y3M5QPHA/4x.gif" class="card-label-gif" alt="Oferta 2">
+              </div>
+              <div class="card-back">
+                <img src="img/Images/PaDa.jpg" class="card-image" alt="Oferta 2">
+                <img src="https://modelviewer.lol/rarity/mythic.png" class="card-rarity-badge" alt="Raridad">
+              </div>
+              <div class="card-price-outside">
+                <img src="https://wiki.leagueoflegends.com/en-us/images/RP_icon.png?1fb01" class="card-rp" alt="RP">
+                <span>Null RP</span>
+              </div>
+              <p class="card-description">Esto no tiene precio</p>
+            </div>
+
+            <div class="tu-tienda-card">
+              <div class="card-front">
+                <div class="card-frame"></div>
+                <img src="https://cdn.7tv.app/emote/01F6MFA3PR0000WDA7ERTDMGAS/4x.png" class="card-label-gif" alt="Oferta 3">
+              </div>
+              <div class="card-back">
+                <img src="img/Images/Calls.jpg" class="card-image" alt="Oferta 3">
+                <img src="https://modelviewer.lol/rarity/exalted.png" class="card-rarity-badge" alt="Raridad">
+              </div>
+              <div class="card-price-outside">
+                <img src="https://wiki.leagueoflegends.com/en-us/images/RP_icon.png?1fb01" class="card-rp" alt="RP">
+                <span>1820 RP</span>
+              </div>
+              <p class="card-description">Algunas llamadas largas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <a href="#hero" id="to-top" class="to-top">↑</a>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script src="js/config.js"></script>
+  
+  <script>
+    if (window.EMAIL_CONFIG && window.EMAIL_CONFIG.publicKey) {
+      emailjs.init(window.EMAIL_CONFIG.publicKey);
+    } else {
+      console.error('⚠️ Configuración de EmailJS no encontrada. Asegúrate de tener js/config.js');
+    }
+  </script>
+  
+  <script src="js/scroll.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/splash.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/tu-tienda.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/typewriter.js"></script>
+</body>
+</html>

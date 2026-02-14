@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+  h1 { font-size: 3rem; }
+  .subtitle { font-size: 1.3rem; }
+  h2 { font-size: 2.2rem; }
+  .section { padding: 80px 0; }
+  .card { padding: 0; margin: 20px 0; }
+  .accordion-header { padding: 30px 20px; }
+  .accordion-content { padding: 0 20px 30px; }
+  .navbar ul { 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px; 
+  }
+  .navbar a { margin: 12px 0; }
+  .gallery { grid-template-columns: 1fr; gap: 20px; }
+  .playlist-grid { grid-template-columns: 1fr; }
+  .coupons { grid-template-columns: 1fr; }
+  .respuesta textarea { width: 100%; }
+  .heart-part { width: 180px; }
+  .theme-btn { 
+    position: static; 
+    right: auto; 
+    margin-left: 10px; 
+  }
+  .tu-tienda-grid {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .accordion-header { padding: 18px 20px; }
+  .accordion-content { padding: 0 20px; }
+  .card.accordion { margin: 16px; }
+  .respuesta-modal .modal-content { padding: 16px; }
+  .respuesta-modal textarea { min-height: 140px; }
+}
+
+@media (max-width: 600px) {
+  .heart-part { width: 160px; }
+  .splash-text { font-size: 1.1rem; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2.6rem; }
+  .btn { padding: 12px 30px; font-size: 1rem; }
+  .gallery-item { min-height: 220px; }
+}

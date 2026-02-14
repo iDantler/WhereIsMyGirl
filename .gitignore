@@ -1,0 +1,44 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencias
+node_modules/
+.pnp
+.pnp.js
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de configuración sensibles
+js/config.js
+config.js
+
+# Build y distribución
+dist/
+build/
+*.zip
+*.rar
+
+# Archivos temporales
+*.tmp
+*.bak
+*.cache
+
+# Variables de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

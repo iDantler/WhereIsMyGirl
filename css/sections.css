@@ -1,0 +1,43 @@
+.section {
+  min-height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 80px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background: var(--primary);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h3 { 
+  font-size: 1.35rem; 
+}
+
+.final-msg {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 80px 0 20px;
+  color: var(--primary);
+}
+
+.signature {
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+}

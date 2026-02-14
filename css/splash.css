@@ -1,0 +1,56 @@
+#splash {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.8s ease;
+}
+
+#splash.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.heart-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url('../img/Cursor/cursor_link.png'), pointer;
+}
+
+.heart-part {
+  width: 220px;
+  height: auto;
+  transition: all 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+
+.heart-part.left.animate {
+  transform: translateX(-120%);
+  opacity: 0;
+}
+
+.heart-part.right.animate {
+  transform: translateX(120%);
+  opacity: 0;
+}
+
+.splash-text {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: var(--primary);
+  font-weight: 400;
+  opacity: 0.9;
+}

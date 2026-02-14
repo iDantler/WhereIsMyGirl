@@ -1,0 +1,210 @@
+.gallery-section {
+  background: linear-gradient(180deg, #fffaf5 0%, #fff5f7 100%);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 44px;
+  justify-items: center;
+  align-items: start;
+  width: 100%;
+  max-width: 1320px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 16 / 9;
+  min-height: 240px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(135deg, #faf6f8 0%, #f5f0f3 100%);
+  cursor: url('../img/Cursor/cursor_link.png'), pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.45s ease;
+  background: transparent;
+  cursor: url('../img/Cursor/cursor_link.png'), pointer;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover video {
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(201, 75, 108, 0.4), transparent);
+  color: #fff;
+  padding: 20px 18px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20000;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  animation: modalFade 200ms ease both;
+}
+
+.image-modal img {
+  max-width: 95%;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+  cursor: url('../img/Cursor/cursor_link.png'), pointer;
+}
+
+.image-modal video {
+  max-width: 85%;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+  background: #000;
+  outline: none;
+  cursor: url('../img/Cursor/cursor_link.png'), pointer;
+}
+
+.image-modal .video-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-modal .video-controls {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.image-modal .play-btn {
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease;
+  cursor: url('../img/Cursor/cursor_link.png'), pointer;
+}
+
+.image-modal .play-btn:hover {
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.65);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.image-modal .video-wrap.playing .video-controls {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.image-modal .video-wrap.playing .play-btn {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+}
+
+.image-modal .close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url('../img/Cursor/cursor_link.png'), pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+  z-index: 20001;
+}
+
+.image-modal .close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .gallery-item {
+    max-width: 100%;
+  }
+
+  .image-modal video {
+    max-width: 95%;
+    max-height: 70vh;
+  }
+}

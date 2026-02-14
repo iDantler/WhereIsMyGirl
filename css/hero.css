@@ -1,0 +1,116 @@
+.hero-new {
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(201, 75, 108, 0.45), rgba(0, 0, 0, 0.55)),
+              url('../img/Background/Background_Xayah_and_Rakan.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: none;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 40px;
+}
+
+.reveal-title {
+  font-size: clamp(2.8rem, 8vw, 7.5rem);
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: revealScale 1.5s ease-out forwards;
+}
+
+.hero-phrase {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid var(--primary);
+}
+
+.small-heart {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.pulse-btn {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.reveal-text {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+@keyframes revealScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.08); }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--primary); }
+}
+
+.floating-hearts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-hearts::before,
+.floating-hearts::after {
+  content: '💗';
+  position: absolute;
+  font-size: 1.8rem;
+  color: rgba(201, 75, 108, 0.4);
+  animation: float 12s infinite ease-in-out;
+}
+
+.floating-hearts::before { left: 15%; animation-delay: 0s; }
+.floating-hearts::after  { right: 20%; animation-delay: 5s; }
+
+@keyframes float {
+  0%   { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.7; }
+  90%  { opacity: 0.7; }
+  100% { transform: translateY(-20vh) rotate(360deg); opacity: 0; }
+}

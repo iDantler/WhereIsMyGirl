@@ -1,0 +1,159 @@
+body.dark {
+  --primary: #ff6fa3;
+  --primary-dark: #ff4c8a;
+  --primary-light: #ffd6e6;
+  --bg-light: #08050a;
+  --bg-superlight: #0f0b10;
+  --text-main: #fdeff6;
+  --text-secondary: #f7c8db;
+  --shadow-primary: rgba(255, 111, 163, 0.18);
+  --shadow-dark: rgba(170, 30, 80, 0.45);
+}
+
+body.dark {
+  background: linear-gradient(180deg, #0a0a0a 0%, #121212 100%);
+  color: var(--text-main);
+}
+
+body.dark .navbar {
+  background: rgba(18, 18, 18, 0.92);
+  box-shadow: 0 2px 15px rgba(0,0,0,0.4);
+}
+
+body.dark .navbar a {
+  color: #b0b0b0;
+}
+
+body.dark .navbar a:hover {
+  color: var(--primary);
+}
+
+body.dark .theme-btn {
+  color: #e0e0e0;
+}
+
+body.dark .theme-btn:hover {
+  color: var(--primary);
+}
+
+body.dark h1, 
+body.dark h2, 
+body.dark h3 {
+  color: #ffffff;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  border-left-color: #e8b4c1;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+body.dark .song {
+  background: #1e1e1e;
+}
+
+body.dark .coupon {
+  background: #181818;
+  border-color: #ff8cab;
+}
+
+body.dark .final-msg,
+body.dark .small-heart {
+  color: #ff8cab;
+}
+
+body.dark .to-top {
+  background: #c94b6c;
+}
+
+body.dark .hero-bg {
+  background: linear-gradient(rgba(201, 75, 108, 0.55), rgba(0, 0, 0, 0.65)),
+              url('../img/Background/Background_Xayah_and_Rakan.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: none;
+}
+
+body.dark .caption {
+  background: linear-gradient(to top, rgba(201, 75, 108, 0.85), transparent);
+}
+
+body.dark .gallery-section {
+  background: linear-gradient(180deg, #0b0a0c 0%, #121015 100%);
+}
+
+body.dark .gallery-item {
+  background: linear-gradient(135deg, #1a1418 0%, #140f12 100%);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.55);
+}
+
+body.dark #splash {
+  background: #0f0f0f;
+}
+
+body.dark .splash-text {
+  color: #ff8cab;
+}
+
+body.dark .respuesta-modal .modal-content {
+  background: linear-gradient(180deg, rgba(24,18,22,0.6), rgba(16,12,16,0.24));
+  color: var(--text-main);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  border: 3px solid transparent;
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+}
+
+body.dark .respuesta-modal textarea {
+  background: #1e1e1e;
+  color: var(--text-main);
+  border-color: rgba(255,140,171,0.32);
+}
+
+body.dark .respuesta-button {
+  box-shadow: 0 8px 20px rgba(255,111,163,0.12);
+}
+
+body.dark .respuesta-modal .btn-small {
+  border-color: rgba(255,140,171,0.08);
+  color: var(--text-main);
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 140, 171, 0.5);
+}
+
+body.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 140, 171, 0.8);
+}
+
+body.dark #tu-tienda {
+  background: linear-gradient(rgba(40, 8, 30, 0.55), rgba(0,0,0,0.6)), 
+              url('../img/Background/shooting.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--text-main);
+}
+
+body.dark #tu-tienda .card-front {
+  background: linear-gradient(135deg, rgba(21,6,16,0.18) 0%, rgba(11,5,9,0.12) 100%);
+  backdrop-filter: blur(14px) saturate(120%);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  border: 1px solid rgba(255,111,163,0.22);
+  color: var(--text-main);
+  box-shadow: 
+    0 12px 40px rgba(0,0,0,0.6),
+    inset 0 0 20px rgba(255,111,163,0.08),
+    inset 0 1px 0 rgba(255,111,163,0.15);
+}
+
+body.dark .tu-tienda-card::before {
+  background: radial-gradient(
+    circle 150px at var(--x) var(--y),
+    rgba(255,111,163,0.85),
+    rgba(255,111,163,0.35) 40%,
+    transparent 70%
+  );
+  animation: borderColorShift 4s ease-in-out infinite;
+}
